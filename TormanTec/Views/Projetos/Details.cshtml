@@ -1,0 +1,50 @@
+﻿@model TormanDomain.Projetos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Projetos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjetosVersao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProjetosVersao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjetoDescricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProjetoDescricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjetoObs)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProjetoObs)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cliente)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProjetosCod }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
