@@ -1,0 +1,47 @@
+﻿@model IEnumerable<TormanDomain.Contato>
+
+@{
+    ViewBag.Title = "Index";
+    
+}
+<div class="container Cabeca">
+    <h2>
+        <h3><img src="~/Images/id-card.png"/>&nbsp&nbsp&nbsp<b>Contato:</b></h3>
+    </h2>
+</div>
+<hr/>
+
+<div class="container body-content" >
+    @foreach (var item in Model)
+    {
+        <div class="panel panel-default" style="padding-left: 10%; width: 80%; background-image: url('../../Images/backcontato.jpg'); background-size: 100%">
+            
+            <div align="justify" class="Contato" style="padding-top: 4%; font-size: 120%">
+                
+                <p>
+                    <img src="~/Images/student.png"/>
+                    &nbsp<b>@Html.DisplayFor(modelItem => item.ContatoDesc)</b>
+                </p>
+                <p>
+                    <img src="~/Images/email-1.png"/>
+                    &nbsp<b>@Html.DisplayFor(modelItem => item.ContatoEmail)</b>
+                </p>
+                <p>
+                    <img src="~/Images/phone-call.png"/>
+                    &nbsp<b>@Html.DisplayFor(modelItem => item.ContatoTel)</b>
+                </p>
+                <p>
+                    <img src="~/Images/github.png"/>
+                    &nbsp<b><a href="@Html.DisplayFor(modelItem => item.ContatoGit)">@Html.DisplayFor(modelItem => item.ContatoGit)</a></b>
+                </p>
+                <p>
+                    <img src="~/Images/geography.png"/>&nbsp<b>Localização:</b>
+                    <br/>
+                    <div class="ContatoMapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d939.8939755213078!2d-42.65088772079477!3d-19.559812935462656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m5!1s0xa551151504d997%3A0xadb8fe43cfa5634d!2sR.+Carmem+Cota%2C+2050+-+Jo%C3%A3o+XXIII%2C+Tim%C3%B3teo+-+MG%2C+35180-360%2C+Brasil!3m2!1d-19.5597405!2d-42.650327399999995!4m3!3m2!1d-19.559742099999998!2d-42.650321299999995!5e0!3m2!1spt-PT!2sbr!4v1502648386560" width="80%" height="300px" frameborder="0" style="border: 0" allowfullscreen></iframe>
+                    </div>
+                </p>
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,37 @@
+﻿@model IEnumerable<TormanDomain.Sobre>
+
+@{
+    ViewBag.Title = "Index";
+}
+<div class="container Cabeca">
+    <h2>
+        <img src="~/Images/notebook-1.png"/>&nbsp&nbsp&nbsp<b>Sobre:</b>
+    </h2>
+</div>
+<hr/>
+    <div class="container body-content"  >
+        @foreach (var item in Model)
+        {
+            <div class="panel panel-default" style="padding-left: 10%; background-image: url('../../Images/backcontato.jpg'); background-size: 100%">
+
+                <h1 align="justify">&nbsp
+                    @Html.DisplayFor(modelItem => item.Titulo)
+                </h1>
+
+                <h3 align="Center">
+                    @Html.DisplayFor(modelItem => item.Descricao)<img src="~/Images/businsman.png" width="25%" align="right" style="padding-bottom: 10%" />
+                </h3>
+                <h4 align="justify">
+                    @Html.DisplayFor(modelItem => item.Body)
+                </h4>
+                <a>
+                    <br />
+                    @Html.DisplayFor(modelItem => item.Type)
+                    <br />
+                </a>
+                <br/>
+                <br/>
+            </div>
+        }
+        
+    </div>

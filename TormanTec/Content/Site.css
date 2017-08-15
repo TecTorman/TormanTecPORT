@@ -1,0 +1,63 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: url('../Images/bg4.jpg');
+    font-family: Sylfaen;
+}
+.Contato {
+    font-size: 150%;
+}
+.Contato img {
+    width: 8%;
+}
+.ContatoMapa {
+    padding-left: 6%;
+    
+}
+.Cabeca {
+    padding-left: 5%
+}
+.Cabeca img {
+    width: 15%;
+}
+/* Set padding to keep content from hitting the edges */
+.MenuMode{
+    padding-left: 20%;
+}
+.LogoMarca{
+    padding-top: 3px;
+}
+.LabelBodySobre{
+    width: 300px;
+    height: 200px;
+}
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.navbar-inverse 
+{
+    background-color: #112C5D;
+    border-color: steelblue;
+    margin-top: 20px;
+    margin-left: 5%;
+    width: 90%;
+    border-radius: 10px 20px;
+}
+.jumbotron {
+    margin-top: 65px;
+    background-color: #9197a0;
+}
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
