@@ -18,7 +18,15 @@ namespace TormanTec.Controllers
         // GET: Contato
         public ActionResult Index()
         {
-            return View(db.Contatoes.ToList().Where(m => m.ContatoCod == 1));
+                try
+                {
+                    return View(db.Contatoes.ToList().Where(m => m.ContatoCod == 1));
+                }
+                catch (Exception e)
+                {
+                    return Create();
+                }
+
         }
         // GET: Contato/Create
         public ActionResult Create()
