@@ -28,6 +28,12 @@ namespace TormanTec.Controllers
                 }
 
         }
+        public ActionResult Contato()
+        {
+                var Lista = db.Contatoes.ToList().Where(m => m.ContatoCod == 1);
+                return PartialView("_ContatoPartialView",Lista);
+
+        }
         // GET: Contato/Create
         public ActionResult Create()
         {

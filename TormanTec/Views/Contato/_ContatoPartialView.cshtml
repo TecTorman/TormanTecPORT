@@ -1,0 +1,14 @@
+﻿@model IEnumerable<TormanDomain.Contato>
+@foreach (var item in Model) { 
+    
+    <h2>Contato</h2>
+    <p>@Html.DisplayFor(modelItem => item.ContatoDesc)</p>
+        
+    <p>@Html.DisplayFor(modelItem => item.ContatoEmail)</p>
+        
+    <p>@Html.DisplayFor(modelItem => item.ContatoTel)</p>
+        
+        
+    
+}
+

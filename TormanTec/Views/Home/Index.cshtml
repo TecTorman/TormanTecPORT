@@ -1,4 +1,9 @@
-﻿@{
+﻿@using System.Activities.Statements
+@using System.Web.Mvc
+@using System.Web.Mvc.Html
+@using TormanDomain
+@using TormanTec.Controllers
+@{
     ViewBag.Title = "Home Page";
 }
 
@@ -59,12 +64,16 @@
 <div class="container body-content">
 <div class="row">
     <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
+        @{
+            @model IEnumerable<TormanDomain.Contato> 
+        
+       
+
+                 @Html.Action("Contato","Contato");
+                     
+                    
+        }
+        
         <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
     </div>
     <div class="col-md-4">

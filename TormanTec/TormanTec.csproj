@@ -260,6 +260,7 @@
     <Content Include="Views\Projetos\Details.cshtml" />
     <Content Include="Views\Projetos\Edit.cshtml" />
     <Content Include="Views\Projetos\Index.cshtml" />
+    <Content Include="Views\Contato\_ContatoPartialView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
