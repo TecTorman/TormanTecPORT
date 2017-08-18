@@ -18,22 +18,7 @@ namespace TormanTec.Controllers
         // GET: Sobres
         public ActionResult Index()
         {
-            return View(db.Sobres.ToList());
-        }
-
-        // GET: Sobres/Details/5
-        public ActionResult Details(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Sobre sobre = db.Sobres.Find(id);
-            if (sobre == null)
-            {
-                return HttpNotFound();
-            }
-            return View(sobre);
+            return View(db.Sobres.ToList().Where(m => m.CodSobre == 1));
         }
 
         // GET: Sobres/Create
