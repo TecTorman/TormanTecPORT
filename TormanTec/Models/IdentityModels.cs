@@ -35,7 +35,5 @@ namespace TormanTec.Models
         public System.Data.Entity.DbSet<TormanDomain.Contato> Contatoes { get; set; }
 
         public System.Data.Entity.DbSet<TormanDomain.Projetos> Projetos { get; set; }
-
-        public System.Data.Entity.DbSet<TormanDomain.Email> Emails { get; set; }
     }
 }

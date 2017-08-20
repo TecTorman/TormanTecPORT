@@ -1,10 +1,16 @@
 ﻿@model IEnumerable<TormanDomain.Contato>
 @foreach (var item in Model) { 
-    <p>@Html.DisplayFor(modelItem => item.ContatoDesc)</p>
-        
-    <p>@Html.DisplayFor(modelItem => item.ContatoEmail)</p>
-        
-    <p>@Html.DisplayFor(modelItem => item.ContatoTel)</p>
+    <b>
+        <div style="text-align: left; padding-left: 55%">
+        <h4 class="ContatoPartial">
+            <p><img src="~/Images/student.png" width="9%" /> &nbsp<b>@Html.DisplayFor(modelItem => item.ContatoDesc)</b></p>
+
+            <p><img src="~/Images/email-1.png" width="10%" />&nbsp @Html.DisplayFor(modelItem => item.ContatoEmail)</p>
+
+            <p><img src="~/Images/phone-call.png" width="10%" />&nbsp @Html.DisplayFor(modelItem => item.ContatoTel)</p>
+        </h4>
+        </div>
+    </b>
         
         
     

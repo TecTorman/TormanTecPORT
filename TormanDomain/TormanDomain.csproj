@@ -44,7 +44,6 @@
     <Compile Include="Home.cs" />
     <Compile Include="Projetos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Email.cs" />
     <Compile Include="Sobre.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
