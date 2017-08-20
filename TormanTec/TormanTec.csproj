@@ -177,6 +177,7 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Scripts\smtp.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -263,10 +264,10 @@
     <Content Include="Views\Projetos\Index.cshtml" />
     <Content Include="Views\Contato\_ContatoPartialView.cshtml" />
     <Content Include="Views\Shared\_EmailPartialView.cshtml" />
+    <Content Include="Views\Emails\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Emails\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
